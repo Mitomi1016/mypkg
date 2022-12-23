@@ -18,7 +18,7 @@ setup(
     zip_safe=True,
     maintainer='root',
     maintainer_email='s21C1119XH@s.chibakoudai.jp',
-    description='a package for practice',
+    description='Package description',
     license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
