@@ -3,7 +3,7 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from std_msgs.msgimportInt16
 
 class Talker():
     def __init__(self, node):
@@ -22,6 +22,6 @@ class Talker():
         talker = Talker(node)
         rclpy.spin(node)
 
-    if __name__ == '__main__':
-         main()
+        if __name__ == '__main__':
+            main()
 
