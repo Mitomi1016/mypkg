@@ -3,7 +3,7 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msgimportInt16
+from std_msgs.msg import Int16
 
 class Talker():
     def __init__(self, node):
