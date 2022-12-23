@@ -4,12 +4,12 @@
   <name>mypkg</name>
   <version>0.0.0</version>
   <description>a package for practice</description>
-  <maintainer email="shoya4108@icloud.com">root</maintainer>
+  <maintainer email="s21C1119XH@s.chibakoudai.jp">root</maintainer>
   <license>BSD-3-Cluase</license>
+
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>launch_ros</exec_depend>
-
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
