@@ -17,9 +17,9 @@ setup(
         install_requires=['setuptools'],
         zip_safe=True,
         maintainer='root',
-        maintainer_email='shoya4108@icloud.com',
-        description='a package for practice',
-        license='BSD-3=Clause',
+        maintainer_email='s21C1119XH@s.chibakoudai.jp',
+        description='a package description',
+        license='BSD-3-Clause',
         tests_require=['pytest'],
         entry_points={
             'console_scripts': [
