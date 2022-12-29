@@ -1,5 +1,6 @@
 # ros2_mypkg
 ![test](https://github.com/Mitomi1016/mypkg/actions/workflows/test.yml/badge.svg)
+
 2022ロボットシステム学,練習用リポジトリである。
 
 ## 使い方　インストール
@@ -27,12 +28,19 @@ $ source ~/.bashrc
 ## 実行例
 
 [INFO] [1671991971.177618000] [listener]: Listen: 0
+
 [INFO] [1671991971.669417200] [listener]: Listen: 1
+
 [INFO] [1671991972.169457200] [listener]: Listen: 2
+
 [INFO] [1671991972.669297400] [listener]: Listen: 3
+
 [INFO] [1671991973.169653400] [listener]: Listen: 4
+
 [INFO] [1671991973.669616100] [listener]: Listen: 5
+
 [INFO] [1671991974.169463200] [listener]: Listen: 6
+
 [INFO] [1671991974.668907100] [listener]: Listen: 7
 
 このように端末2(listener)に出力される。
