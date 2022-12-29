@@ -1,8 +1,9 @@
 # ros2_mypkg
-![test](git@github.com:Mitomi1016/mypkg.git)
+![test](https://github.com/Mitomi1016/mypkg/actions/workflows/test.yml/badge.svg)
 2022ロボットシステム学,練習用リポジトリである。
 
-##　使い方　インストール
+## 使い方　インストール
+
 Ubuntu22.04の端末を開き、ターミナルに以下を入力。
 
 $ git clone git@github.com:Mitomi1016/mypkg.git
@@ -14,6 +15,7 @@ $ ./setup.bash
 $ source ~/.bashrc
 
 ## 起動する手順
+
 端末1のターミナルに以下を入力。
 
 端末1 $ ros2 run mypkg talker
@@ -32,6 +34,7 @@ $ source ~/.bashrc
 [INFO] [1671991973.669616100] [listener]: Listen: 5
 [INFO] [1671991974.169463200] [listener]: Listen: 6
 [INFO] [1671991974.668907100] [listener]: Listen: 7
+
 このように端末2(listener)に出力される。
 
 ## テスト環境
