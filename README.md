@@ -81,7 +81,7 @@ $ ros2 launch mypkg  talk_listen.launch.py
 * Ubuntu22.04 LTS
 
 ## 必要なソフトウェア
-* ROS2　foxy
+* ROS2 humble
 
 ## 権利
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。
