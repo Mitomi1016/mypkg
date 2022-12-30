@@ -37,7 +37,9 @@ $ source ~/.bashrc
 ## 機能
 
 talker(端末1)で整数を0からカウントする
+
 talker(端末1)でカウントした整数をlistener(端末2)で標準出力する
+
 talkerでカウントした整数をパブリッシュし、listenerはtalkerでカウントした整数をサブスクライブして表示する。talkerとlistenerはcountupというトピックによって連結している。
 
 ## 実行例
