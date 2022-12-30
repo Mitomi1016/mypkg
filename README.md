@@ -1,11 +1,11 @@
 # ros2_mypkg
 ![test](https://github.com/Mitomi1016/mypkg/actions/workflows/test.yml/badge.svg)
 
-2022ロボットシステム学,練習用リポジトリである。
+* 2022ロボットシステム学,練習用リポジトリである。
 
 ## 使い方　インストール
 
-Ubuntu22.04の端末を開き、ターミナルに以下を入力。
+Ubuntu22.04 LSTの端末を開き、ターミナルに以下を入力。
 
 $ git clone git@github.com:Mitomi1016/mypkg.git
 
@@ -24,6 +24,12 @@ $ source ~/.bashrc
 別の端末を使ってサブスクライブする。
 
 端末2 $ ros2 run mypkg listener
+
+## 機能
+
+countupというトピックを通し、talker(端末1)で0から整数をカウントする
+
+listener(端末2)ではtalker(端末1)で0から順にカウントした整数を標準出力で出力する
 
 ## 実行例
 
@@ -45,11 +51,37 @@ $ source ~/.bashrc
 
 このように端末2(listener)に出力される。
 
+## 実行例2
+
+launchを使用することにより、一つの端末で動作を確認することができる。
+
+以下を(端末1)のターミナル上に入力
+
+$ ros2 launch mypkg  talk_listen.launch.py
+
+[listener-2] [INFO] [1671992183.194454600] [listener]: Listen: 0
+
+[listener-2] [INFO] [1671992183.684191200] [listener]: Listen: 1
+
+[listener-2] [INFO] [1671992184.184423100] [listener]: Listen: 2
+
+[listener-2] [INFO] [1671992184.684597200] [listener]: Listen: 3
+
+[listener-2] [INFO] [1671992185.184680100] [listener]: Listen: 4
+
+[listener-2] [INFO] [1671992185.684633400] [listener]: Listen: 5
+
+[listener-2] [INFO] [1671992186.184626800] [listener]: Listen: 6
+
+[listener-2] [INFO] [1671992186.684521100] [listener]: Listen: 7
+
+このように端末1に出力される。
+
 ## テスト環境
-* Ubuntu22.04
+* Ubuntu22.04 LTS
 
 ## 必要なソフトウェア
-* ROS2
+* ROS2　foxy
 
 ## 権利
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。
