@@ -10,6 +10,9 @@ Ubuntu22.04 LSTの端末を開き、ターミナル上に以下を入力。
 ```
 
 $ git clone https://github.com/Mitomi1016/ros2_setup_scripts
+$ cd ros2_setup_scripts
+$./setup.bash
+$ source ~/.bashrc
 
 ```
 
@@ -33,9 +36,9 @@ $ git clone https://github.com/Mitomi1016/ros2_setup_scripts
 
 ## 機能
 
-countupというトピックを通し、talker(端末1)で整数をカウントする
-
-listener(端末2)はtalker(端末1)で0から順にカウントした整数を標準出力で出力する
+talker(端末1)で整数を0からカウントする
+talker(端末1)でカウントした整数をlistener(端末2)で標準出力する
+talkerでカウントした整数をパブリッシュし、listenerはtalkerでカウントした整数をサブスクライブして表示する。talkerとlistenerはcountupというトピックによって連結している。
 
 ## 実行例
 
