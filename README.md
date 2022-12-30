@@ -3,24 +3,33 @@
 
 * 2022ロボットシステム学,練習用リポジトリである。
 
-## 使い方　インストール
+## インストール
 
-Ubuntu22.04 LSTの端末を開き、ターミナルに以下を入力。
+Ubuntu22.04 LSTの端末を開き、ターミナル上に以下を入力。
 
 ```
 
-$ git clone git@github.com:Mitomi1016/mypkg.git
+$ git clone https://github.com/Mitomi1016/ros2_setup_scripts
+
 ```
 
 ## 起動する手順
 
 端末1のターミナルに以下を入力。
 
+```
+
 端末1 $ ros2 run mypkg talker
+
+```
 
 別の端末を使ってサブスクライブする。
 
+```
+
 端末2 $ ros2 run mypkg listener
+
+```
 
 ## 機能
 
@@ -54,8 +63,9 @@ listener(端末2)はtalker(端末1)で0から順にカウントした整数を�
 launchを使用することにより、一つの端末で動作を確認することができる。
 
 以下を端末1のターミナル上に入力
-
+```
 $ ros2 launch mypkg  talk_listen.launch.py
+```
 
 ```
 
